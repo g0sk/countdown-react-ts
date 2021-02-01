@@ -57,10 +57,10 @@
 }
 .card {
 	padding: 2rem 0;
-	width: 45vh;
-	height: 15vh;
-	display: flex;
-	justify-content: center;
+	width: 50vh;
+	height: 16vh;
+	text-align: center;
+	padding: 2rem 1rem;
 	background-color: white;
 	opacity: 0.5;
 	border-radius: 1rem;
@@ -76,4 +76,17 @@
 	background-color: red;
 	z-index: 3;
 	padding: 2rem 0;
+}
+.progressbar {
+	z-index: 3;
+	padding: 1rem 2rem;
+}
+
+.time-image {
+	height: 144px !important;
+	width: 144px !important;
+}
+
+.time {
+	padding-bottom: 1rem;
 }
