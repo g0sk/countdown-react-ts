@@ -1,5 +1,6 @@
 import {useState, useEffect } from 'react';
 import ProgressBar from '@ramonak/react-progress-bar';
+import { LikeButton } from '../scoreboard/like-button';
 
 const countdownDate = new Date('2021-03-15T00:00:00') as any;
 const initialDate = new Date('2021-02-01T00:00:00') as any;
@@ -57,6 +58,7 @@ export const Countdown = () => {
                      <ProgressBar completed={progress} bgcolor={"orange"} labelColor={"purple"} labelAlignment={"outside"} />
                  </div>
             </div>
+            <LikeButton />
         </div>
     );
 }
