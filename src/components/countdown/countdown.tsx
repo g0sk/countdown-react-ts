@@ -54,7 +54,7 @@ export const Countdown = () => {
                     <h2 className="time">{time}</h2>
                  </div>
                  <div className="progressbar">
-                     <ProgressBar completed={progress} bgcolor={"orange"} />
+                     <ProgressBar completed={progress} bgcolor={"orange"} labelColor={"purple"} labelAlignment={"outside"} />
                  </div>
             </div>
         </div>

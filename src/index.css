@@ -24,3 +24,18 @@ h2 {
 	color: red;
 	font-style: bold;
 }
+
+@media screen and (max-width: 1300px) {
+	h1 {
+		color: #0000cc;
+		font-weight: 600;
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-weight: 300;
+		font-size: 0.8rem;
+		color: red;
+		font-style: bold;
+	}
+}

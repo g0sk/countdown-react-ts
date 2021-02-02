@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 .App {
 	font-family: 'Poppins', Light;
-	/*background-color: #0000ff;*/
 	width: 80vh;
 	height: 70vh;
 }
@@ -60,7 +59,7 @@
 	width: 50vh;
 	height: 16vh;
 	text-align: center;
-	padding: 2rem 1rem;
+	padding: 1rem 1rem;
 	background-color: white;
 	opacity: 0.5;
 	border-radius: 1rem;
@@ -75,11 +74,11 @@
 .timeleft {
 	background-color: red;
 	z-index: 3;
-	padding: 2rem 0;
+	padding: 1rem 0;
 }
 .progressbar {
 	z-index: 3;
-	padding: 1rem 2rem;
+	padding: 0 2rem;
 }
 
 .time-image {
@@ -89,4 +88,39 @@
 
 .time {
 	padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+	.figure1,
+	.figure2 {
+		background: white;
+		height: 10rem;
+		width: 10rem;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.figure1 {
+		background: linear-gradient(
+			to right bottom,
+			rgba(255, 255, 255, 0.8),
+			rgba(255, 255, 255, 0.3)
+		);
+		background-color: red;
+		top: 5%;
+		right: 25%;
+		z-index: -1;
+	}
+
+	.figure2 {
+		background: linear-gradient(
+			to right bottom,
+			rgba(255, 255, 255, 0.3),
+			rgba(255, 255, 255, 0.8)
+		);
+		bottom: 17%;
+		left: 25%;
+		z-index: 2;
+		background-color: red;
+	}
 }
