@@ -15,7 +15,7 @@ export const Countdown = () => {
     const calcProgress = (): any=> {
         let diffToday = +new Date() - +new Date(initialDate);
         let diff = +new Date(countdownDate) - +new Date();
-        let progress = Math.floor((Math.abs(diffToday / diff)) * 100);
+        let progress = Math.floor((Math.abs(diff / diffToday )) * 100);
         return progress;
     }
     const calcTimeLeft = (): countdown => {
