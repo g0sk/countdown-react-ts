@@ -1,7 +1,7 @@
 import {useState, useEffect } from 'react';
 import ProgressBar from "@ramonak/react-progress-bar";
 
-const countdownDate = new Date('2021-02-18T18:30:00') as any;
+const countdownDate = new Date('2021-03-11T18:00:00') as any;
 const initialDate = new Date('2021-02-17T03:00:00') as any;
 
 export const Countdown = () => {
@@ -15,7 +15,7 @@ export const Countdown = () => {
     const calcProgress = (): any=> {
         let diffToday = +new Date() - +new Date(initialDate);
         let diff = +new Date(countdownDate) - +new Date();
-        let progress = Math.floor((Math.abs(diff / diffToday )) * 100);
+        let progress = Math.floor((Math.abs(diffToday/diff )) * 100);
         return progress;
     }
     const calcTimeLeft = (): countdown => {
