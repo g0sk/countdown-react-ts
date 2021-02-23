@@ -1,7 +1,7 @@
 import {useState, useEffect } from 'react';
 import ProgressBar from "@ramonak/react-progress-bar";
 
-const countdownDate = new Date('2021-03-11T18:00:00') as any;
+const countdownDate = new Date('2021-03-13T18:00:00') as any;
 const initialDate = new Date('2021-02-17T03:00:00') as any;
 
 export const Countdown = () => {
